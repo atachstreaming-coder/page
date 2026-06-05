@@ -86,9 +86,9 @@ const streaming: Service[] = [
   { name: "Prime Video", price: "S/7.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg", logoAlt: "Prime Video Logo" },
   { name: "YouTube Premium", price: "S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg", logoAlt: "YouTube Premium Logo" },
   { name: "Disney+ Standard", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg", logoAlt: "Disney+ Logo" },
-  { name: "DGO", price: "S/25.00", logoUrl: dgoLogo.url, logoAlt: "DGO Logo" },
+  { name: "DGO", price: "S/25.00", logoUrl: <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/DirecTV_Go_logo.svg" alt="DGO" />, logoAlt: "DGO Logo" },
   { name: "Disney+ Premium", price: "S/15.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg", logoAlt: "Disney+ Logo" },
-  { name: "Movistar Play", price: "S/25.00", logoUrl: movistarLogo.url, logoAlt: "Movistar Play Logo" },
+  { name: "Movistar Play", price: "S/25.00", logoUrl: <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Logo_de_Movistar_%282017%29.svg" alt="Movistar" />, logoAlt: "Movistar Play Logo" },
   { name: "Crunchyroll", price: "S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png", logoAlt: "Crunchyroll Logo" },
   { name: "IPTV Premium", price: "S/10.00", icon: <Tv className="w-8 h-8 text-blue-400" /> },
   { name: "Universal+", price: "S/10.00", logoUrl: universalLogo.url, logoAlt: "Universal+ Logo" },
@@ -96,7 +96,7 @@ const streaming: Service[] = [
 
 const tools: Service[] = [
   { name: "ChatGPT Go", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg", logoAlt: "ChatGPT Logo" },
-  { name: "Canva Pro", price: "S/3.00", logoUrl: canvaLogo.url, logoAlt: "Canva Pro Logo" },
+  { name: "Canva Pro", price: "S/3.00", logoUrl: <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Canva" />, logoAlt: "Canva Pro Logo" },
   { name: "VPN Surfshark", price: "S/10.00", logoUrl: surfsharkLogo.url, logoAlt: "Surfshark Logo" },
 ];
 
@@ -113,9 +113,9 @@ const special: Service[] = [
 ];
 
 const PAYMENT_LOGOS = [
-  { url: yapeLogo.url, alt: "Yape" },
-  { url: bcpLogo.url, alt: "BCP" },
-  { url: binanceLogo.url, alt: "Binance" },
+  { url: <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Yape_text_logo.png" alt="Yape" />, alt: "Yape" },
+  { url: <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_BCP.svg" alt="BCP" />, alt: "BCP" },
+  { url: <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Binance_Logo.svg" alt="Binance" />, alt: "Binance" },
   { url: lemonLogo.url, alt: "Lemon" },
 ];
 
