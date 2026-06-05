@@ -19,17 +19,6 @@ import {
 } from "lucide-react";
 import { lazy, memo, Suspense, useCallback, useState } from "react";
 import type { ComponentType, CSSProperties, ReactNode } from "react";
-import atachLogo from "@/assets/atach-logo.png.asset.json";
-import yapeLogo from "@/assets/brands/yape.svg.asset.json";
-import bcpLogo from "@/assets/brands/bcp.svg.asset.json";
-import binanceLogo from "@/assets/brands/binance.svg.asset.json";
-import lemonLogo from "@/assets/brands/lemon.png.asset.json";
-import dgoLogo from "@/assets/brands/dgo.svg.asset.json";
-import movistarLogo from "@/assets/brands/movistar.svg.asset.json";
-import universalLogo from "@/assets/brands/universal.png.asset.json";
-import canvaLogo from "@/assets/brands/canva.svg.asset.json";
-import freefireLogo from "@/assets/brands/freefire.png.asset.json";
-import surfsharkLogo from "@/assets/brands/surfshark.svg.asset.json";
 import type { ProductDialogService } from "@/components/ProductDialog";
 
 const ProductDialog = lazy(() => import("@/components/ProductDialog"));
@@ -86,22 +75,22 @@ const streaming: Service[] = [
   { name: "Prime Video", price: "S/7.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg", logoAlt: "Prime Video Logo" },
   { name: "YouTube Premium", price: "S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg", logoAlt: "YouTube Premium Logo" },
   { name: "Disney+ Standard", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg", logoAlt: "Disney+ Logo" },
-  { name: "DGO", price: "S/25.00", logoUrl: <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/DirecTV_Go_logo.svg" alt="DGO" />, logoAlt: "DGO Logo" },
+  { name: "DGO", price: "S/25.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/16/DirecTV_Go_logo.svg", logoAlt: "DGO Logo" },
   { name: "Disney+ Premium", price: "S/15.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg", logoAlt: "Disney+ Logo" },
-  { name: "Movistar Play", price: "S/25.00", logoUrl: <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Logo_de_Movistar_%282017%29.svg" alt="Movistar" />, logoAlt: "Movistar Play Logo" },
+  { name: "Movistar Play", price: "S/25.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Logo_de_Movistar_%282017%29.svg", logoAlt: "Movistar Play Logo" },
   { name: "Crunchyroll", price: "S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png", logoAlt: "Crunchyroll Logo" },
   { name: "IPTV Premium", price: "S/10.00", icon: <Tv className="w-8 h-8 text-blue-400" /> },
-  { name: "Universal+", price: "S/10.00", logoUrl: universalLogo.url, logoAlt: "Universal+ Logo" },
+  { name: "Universal+", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Universal_TV_logo_%282023%29.svg/512px-Universal_TV_logo_%282023%29.svg.png", logoAlt: "Universal+ Logo" },
 ];
 
 const tools: Service[] = [
   { name: "ChatGPT Go", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg", logoAlt: "ChatGPT Logo" },
-  { name: "Canva Pro", price: "S/3.00", logoUrl: <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg" alt="Canva" />, logoAlt: "Canva Pro Logo" },
-  { name: "VPN Surfshark", price: "S/10.00", logoUrl: surfsharkLogo.url, logoAlt: "Surfshark Logo" },
+  { name: "Canva Pro", price: "S/3.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg", logoAlt: "Canva Pro Logo" },
+  { name: "VPN Surfshark", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/30/Surfshark_logo.svg", logoAlt: "Surfshark Logo" },
 ];
 
 const gaming: Service[] = [
-  { name: "Diamantes Free Fire", price: "DESDE S/5.00", logoUrl: freefireLogo.url, logoAlt: "Free Fire Logo" },
+  { name: "Diamantes Free Fire", price: "DESDE S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Free_Fire_logo.png/220px-Free_Fire_logo.png", logoAlt: "Free Fire Logo" },
 ];
 
 const social: Service[] = [
@@ -113,10 +102,10 @@ const special: Service[] = [
 ];
 
 const PAYMENT_LOGOS = [
-  { url: <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Yape_text_logo.png" alt="Yape" />, alt: "Yape" },
-  { url: <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_BCP.svg" alt="BCP" />, alt: "BCP" },
-  { url: <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Binance_Logo.svg" alt="Binance" />, alt: "Binance" },
-  { url: lemonLogo.url, alt: "Lemon" },
+  { url: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Yape_text_logo.png", alt: "Yape" },
+  { url: "https://upload.wikimedia.org/wikipedia/commons/1/14/Logo_BCP.svg", alt: "BCP" },
+  { url: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Binance_Logo.svg", alt: "Binance" },
+  { url: "/lemon.png", alt: "Lemon" },
 ];
 
 const LogoTile = memo(function LogoTile({ s }: { s: Service }) {
@@ -259,7 +248,7 @@ function Index() {
           <a href="#" className="flex items-center gap-3">
             <div className="w-24 h-24 shrink-0 flex items-center justify-center">
               <img
-                src={atachLogo.url}
+                src="/logo-atach.png"
                 alt="Atach Streaming Logo"
                 className="w-full h-full object-contain"
                 width={96}
