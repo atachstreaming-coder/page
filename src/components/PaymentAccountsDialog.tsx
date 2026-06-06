@@ -6,16 +6,12 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import yapeLogo from "@/assets/brands/yape.svg.asset.json";
-import bcpLogo from "@/assets/brands/bcp.svg.asset.json";
-import binanceLogo from "@/assets/brands/binance.svg.asset.json";
-import lemonLogo from "@/assets/brands/lemon.png.asset.json";
 
 const PAYMENT_ACCOUNTS = [
-  { method: "Yape", account: "914 836 241", name: "Alvaro Avila", logo: yapeLogo.url },
-  { method: "Binance", account: "926025651", name: "vipperu", logo: binanceLogo.url },
-  { method: "Lemon", account: "902220944", name: "Alvaro Ávila", logo: lemonLogo.url },
-  { method: "BCP Soles", account: "19495979711000", name: "Cuenta en Soles", logo: bcpLogo.url },
+  { method: "Yape", account: "914 836 241", name: "Alvaro Avila", logo: "/logo-yape.png" },
+  { method: "Binance", account: "926025651", name: "vipperu", logo: "/logo-binance.png" },
+  { method: "Lemon", account: "902220944", name: "Alvaro Ávila", logo: "/logo-lemon.png" },
+  { method: "BCP Soles", account: "19495979711000", name: "Cuenta en Soles", logo: "/logo-bcp.png" },
 ];
 
 export default function PaymentAccountsDialog({
