@@ -62,7 +62,7 @@ type Service = ProductDialogService;
 const LOGO_CLASS = "w-8 h-8 object-contain";
 
 const streaming: Service[] = [
-  { name: "Netflix Premium", price: "S/13.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png", logoAlt: "Netflix Logo" },
+  { name: "Netflix Premium", price: "S/15.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png", logoAlt: "Netflix Logo" },
   { name: "Paramount+", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Paramount_Plus.svg", logoAlt: "Paramount+ Logo" },
   { name: "Max", price: "S/6.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Max_logo.svg", logoAlt: "Max Logo" },
   {
