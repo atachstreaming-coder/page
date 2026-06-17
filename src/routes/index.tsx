@@ -63,7 +63,7 @@ const LOGO_CLASS = "w-8 h-8 object-contain";
 
 const streaming: Service[] = [
   { name: "Netflix Premium", price: "S/15.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png", logoAlt: "Netflix Logo" },
-  { name: "Paramount+", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Paramount_Plus.svg", logoAlt: "Paramount+ Logo" },
+  { name: "Paramount+", price: "S/15.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Paramount_Plus.svg", logoAlt: "Paramount+ Logo" },
   { name: "Max", price: "S/6.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Max_logo.svg", logoAlt: "Max Logo" },
   {
     name: "Vix+",
@@ -77,7 +77,7 @@ const streaming: Service[] = [
   { name: "Prime Video", price: "S/7.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg", logoAlt: "Prime Video Logo" },
   { name: "YouTube Premium", price: "S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg", logoAlt: "YouTube Premium Logo" },
   { name: "Disney+ Standard", price: "S/10.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg", logoAlt: "Disney+ Logo" },
-  { name: "DGO", price: "S/25.00", logoUrl: "/logo-dgo.png", logoAlt: "DGO Logo" },
+  { name: "DGO", price: "S/30.00", logoUrl: "/logo-dgo.png", logoAlt: "DGO Logo" },
   { name: "Disney+ Premium", price: "S/15.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg", logoAlt: "Disney+ Logo" },
   { name: "Movistar Play", price: "S/25.00", logoUrl: "/logo-movistar.png", logoAlt: "Movistar Play Logo" },
   { name: "Crunchyroll", price: "S/5.00", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png", logoAlt: "Crunchyroll Logo" },
